@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #fff;
+  background-color: #282435;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #17b3a3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 60px;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo-text {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+.navbar-links a {
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  user-select: none;
+  padding: 4px 0;
+}
+.navbar-links a:hover {
+  opacity: 0.85;
+}
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  border: none;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.25s ease;
+}
+.btn:hover {
+  background-color: #222;
+}
+
+.hero {
+  /* background: radial-gradient(
+      ellipse at top left,
+      rgba(119, 81, 127, 0.5) 0%,
+      transparent 60%
+    ),
+    radial-gradient(ellipse at bottom right, #01050f 20%, #10171f 80%);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  color: white;
+  text-align: center;
+  padding: 70px 20px 100px 20px;
+  /* user-select: none; */
+}
+.hero-inner {
+  max-width: 700px;
+  margin: auto;
+}
+.hero-small-text {
+  background-color: rgba(255 255 255 / 0.1);
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 8px 12px;
+  display: inline-block;
+  margin-bottom: 16px;
+  user-select: text;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  user-select: text;
+}
+.hero-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 42px;
+  padding: 0 8px;
+  user-select: text;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.btn-primary {
+  background-color: #17b3a3;
+  border-radius: 6px 0 0 6px;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+.btn-primary:hover {
+  background-color: #159283;
+}
+.btn-secondary {
+  background-color: #17b3a3;
+  border-radius: 0 6px 6px 0;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+.btn-secondary:hover {
+  background-color: #159283;
+}
+/* Arrow style for the buttons */
+.arrow {
+  font-weight: 700;
+  font-size: 18px;
+  user-select: none;
+}
+.skill img {
+  width: 350px;
+  height: auto;
+}
+.contenor {
+  max-width: 1500px;
+  margin: 4rem auto 3rem;
+  padding: 0 1rem;
+}
+.cards {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  /* background: #191b28; */
+  border-radius: 1rem;
+  /* overflow: hidden; */
+  max-width: 360px;
+  /* flex: 1 1 320px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6), inset 0 0 50px #2f2f47,
+    0 8px 12px rgba(255, 255, 255, 0.03);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+.card-content {
+  padding: 1.5rem 1.8rem 2rem;
+}
+.card-content h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.card-content ul {
+  margin: 0;
+  padding-left: 1.3rem;
+}
+.card-content ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.card-content ul li:last-child {
+  background-color: #2c5ffd;
+  display: inline;
+  border-radius: 0.25rem;
+  padding: 0 0.25rem;
+}
+.bottom-text {
+  text-align: center;
+  margin-top: 3rem;
+}
+.bottom-text h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+.bottom-text p {
+  font-weight: 400;
+  max-width: 750px;
+  margin: 0 auto;
+  opacity: 0.85;
+  font-size: 1rem;
+}
+@media (max-width: 920px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dish {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: #2c2b41;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dish img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.dish p {
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .dish {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.partners img {
+  width: 100%;
+}
+a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #282435;
+  color: #eee;
+  padding: 40px 20px;
+  text-align: center;
+}
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+footer p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+footer ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+footer ul li {
+  display: inline;
+}
+footer ul li a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer ul li a:hover{
+  text-decoration: underline;
+}
+.footer-bottom{
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
